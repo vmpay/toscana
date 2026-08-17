@@ -5,6 +5,10 @@
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+  <!-- Cache Control to prevent mobile browsers from serving stale cached versions -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
   <title>Запрошення на весілля - Italian Summer</title>
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect" />
@@ -175,10 +179,10 @@
 </head>
 
 <body class="font-sans antialiased text-brand-olive bg-brand-cream overflow-hidden"
-  style="background-image: url('background_long.png'); background-size: 100% auto; background-repeat: no-repeat; background-attachment: scroll; background-position: top center;">
+  style="background-image: url('background_long.png?v=1.0.1'); background-size: 100% auto; background-repeat: no-repeat; background-attachment: scroll; background-position: top center;">
   <!-- BEGIN: Envelope Overlay (Hero) -->
   <div class="fixed inset-0 z-50 flex items-center justify-center overflow-hidden" id="envelope-overlay">
-    <div class="absolute inset-0 bg-cover bg-center" id="envelope-bg" style="background-image: url('envelope.png');">
+    <div class="absolute inset-0 bg-cover bg-center" id="envelope-bg" style="background-image: url('envelope.png?v=1.0.1');">
     </div>
     <!-- Darken overlay for readability -->
     <div class="absolute inset-0 bg-black/20"></div>
@@ -332,7 +336,7 @@
       <div class="w-full max-w-sm text-center space-y-4 relative z-10 reveal-up">
         <h2 class="font-serif text-4xl mb-2">Де ми зустрінемось?</h2>
         <div class="space-y-4">
-          <img src="089-villa-toscana.jpg" alt="Villa Toscana"
+          <img src="089-villa-toscana.jpg?v=1.0.1" alt="Villa Toscana"
             class="w-full h-auto rounded-2xl shadow-md border border-brand-olive/10" />
           <p class="font-sans text-sm font-medium opacity-80">1 Praskiego Pułku WP 89, 05-077 Warszawa</p><a
             class="inline-block mt-2 px-8 py-3 bg-brand-olive text-brand-cream rounded-full font-sans text-sm uppercase tracking-wide transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-brand-oliveLight active:scale-95 shadow-md"
