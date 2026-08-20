@@ -182,7 +182,8 @@
   style="background-image: url('background_long.png?v=1.0.1'); background-size: 100% auto; background-repeat: no-repeat; background-attachment: scroll; background-position: top center;">
   <!-- BEGIN: Envelope Overlay (Hero) -->
   <div class="fixed inset-0 z-50 flex items-center justify-center overflow-hidden" id="envelope-overlay">
-    <div class="absolute inset-0 bg-cover bg-center" id="envelope-bg" style="background-image: url('envelope.png?v=1.0.1');">
+    <div class="absolute inset-0 bg-cover bg-center" id="envelope-bg"
+      style="background-image: url('envelope.png?v=1.0.1');">
     </div>
     <!-- Darken overlay for readability -->
     <div class="absolute inset-0 bg-black/20"></div>
@@ -203,17 +204,26 @@
   <!-- BEGIN: Main Scroll Container -->
   <main class="scroll-container hidden" id="main-content">
     <!-- BEGIN: Section 1 - Save the Date -->
-    <section class="scroll-section relative flex flex-col items-center justify-center bg-cover bg-center"
+    <section
+      class="scroll-section relative flex flex-col items-center justify-center bg-cover bg-center overflow-hidden"
       id="save-the-date">
+      <!-- Background Couple Illustration -->
+      <div class="absolute inset-x-0 bottom-0 z-0 flex items-end justify-center pointer-events-none">
+        <img src="couple.webp?v=1.0.1" alt="Couple" class="max-w-full max-h-[85vh] object-contain opacity-100" />
+      </div>
       <div class="relative z-10 flex flex-col items-center text-brand-olive text-center px-8">
         <!-- Curved Text Simulation -->
-        <div class="mb-12 hero-anim reveal-up delay-100">
+        <div class="mb-0 hero-anim reveal-up delay-100">
           <svg class="w-full max-w-xs h-24" viewbox="0 0 300 80">
             <path d="M 20,65 Q 150,10 280,65" fill="transparent" id="curve"></path>
-            <text class="font-serif text-[18px] font-bold tracking-widest uppercase" fill="currentColor">
+            <text class="font-serif text-[24px] font-bold tracking-widest uppercase" fill="currentColor">
               <textpath href="#curve" startoffset="50%" text-anchor="middle">MARIA &amp; ANDRII</textpath>
             </text>
           </svg>
+        </div>
+        <!-- Rings Icon -->
+        <div class="-mt-4 mb-6 hero-anim reveal-up delay-150">
+          <img src="rings.png?v=1.0.1" alt="Rings" class="w-24 sm:w-32 h-auto mx-auto" />
         </div>
         <!-- Main Heading -->
         <div class="space-y-2 mb-6 hero-anim reveal-up delay-200">
@@ -221,11 +231,8 @@
           <h1 class="font-serif italic text-5xl sm:text-6xl leading-tight">Vita</h1>
         </div>
         <!-- Decorative Divider -->
-        <div class="w-48 h-8 mb-8 hero-anim reveal-up delay-300">
-          <svg class="w-full h-full" fill="none" stroke="currentColor" viewbox="0 0 100 20">
-            <path d="M 0,10 Q 25,20 50,10 T 100,10" stroke-width="0.5"></path>
-            <circle cx="50" cy="10" fill="currentColor" r="1"></circle>
-          </svg>
+        <div class="w-64 sm:w-72 h-auto mb-8 hero-anim reveal-up delay-300">
+          <img src="divider.png?v=1.0.1" alt="Divider" class="w-full h-auto mx-auto" />
         </div>
         <!-- Date Info -->
         <div class="space-y-2 hero-anim reveal-up delay-400">
@@ -334,7 +341,7 @@
     <section class="scroll-section flex flex-col items-center justify-center p-6 relative overflow-hidden"
       id="location-section">
       <div class="w-full max-w-sm text-center space-y-4 relative z-10 reveal-up">
-        <h2 class="font-serif text-4xl mb-2">Де ми зустрінемось?</h2>
+        <h2 class="font-serif text-3xl mb-2">Де ми зустрінемось?</h2>
         <div class="space-y-4">
           <img src="089-villa-toscana.jpg?v=1.0.1" alt="Villa Toscana"
             class="w-full h-auto rounded-2xl shadow-md border border-brand-olive/10" />
